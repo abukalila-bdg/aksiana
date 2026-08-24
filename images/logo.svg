@@ -1,0 +1,16 @@
+<svg width="340" height="95" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(10, 15)">
+                                <!-- 'A' Icon Geometry -->
+                                <!-- Left Leg (Dark Blue) -->
+                                <path d="M 45 0 L 5 80 L 30 80 L 58 24 Z" fill="#1D4ED8"/>
+                                <!-- Right Leg (Light Blue) -->
+                                <path d="M 45 0 L 62 0 L 102 80 L 77 80 Z" fill="#60A5FA" opacity="0.95"/>
+                                <!-- Crossbar Overlap (Vibrant Blue) -->
+                                <path d="M 18 53 L 88 53 L 75 80 L 5 80 Z" fill="#3B82F6" opacity="0.85"/>
+                                
+                                <!-- Logo Text -->
+                                <text x="120" y="58" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="56" fill="#0F172A">Aksiana<tspan fill="#3B82F6">.</tspan></text>
+                                <!-- Tagline -->
+                                <text x="125" y="78" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="14.5" fill="#64748B" letter-spacing="4.5">DIGITAL FOR LOCAL</text>
+                            </g>
+                        </svg>
