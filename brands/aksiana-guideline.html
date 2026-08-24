@@ -47,93 +47,53 @@
         <section id="logo" class="scroll-mt-24">
             <div class="mb-8">
                 <h2 class="text-2xl font-bold text-slate-900">1. Master Logo</h2>
-                <p class="text-slate-500 mt-2">Logo utama Aksiana memadukan ikon sinergi (overlap) dengan palet warna Tech-Blue. Tagline "DIGITAL FOR LOCAL" mempertegas misi perusahaan.</p>
+                <p class="text-slate-500 mt-2">Logo utama Aksiana berupa inisial "A" berbentuk pita lipat (folding ribbon) dengan palet warna Tech-Blue yang melambangkan pondasi kuat dan sinergi digital.</p>
             </div>
             
             <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
                 <!-- Preview Area -->
                 <div class="pattern-bg bg-slate-50 p-12 md:p-24 flex justify-center items-center border-b border-slate-200">
                     <div id="svg-final-logo" class="bg-white py-8 px-12 rounded-2xl shadow-xl border border-slate-100 transform scale-110">
-                        <!-- THE FINAL SVG LOGO -->
-                        <svg width="320" height="90" viewBox="0 0 380 100" xmlns="http://www.w3.org/2000/svg">
-                            <g transform="translate(15, 15)">
-                                <!-- Icon: Overlapping Shapes (Concept 2 style, Concept 1 colors) -->
-                                <!-- Back shape / Left (Darker Blue) -->
-                                <path d="M30 0 L5 70 L25 70 L35 30 L50 70 L70 70 Z" fill="#1D4ED8"/> 
-                                <!-- Front shape / Right Overlap (Vibrant Blue) -->
-                                <path d="M30 0 L50 0 L65 50 L45 50 Z" fill="#3B82F6" opacity="0.95"/> 
+                        
+                        <!-- THE FINAL SVG LOGO (UPDATED MATCHING PNG) -->
+                        <svg width="340" height="95" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(10, 15)">
+                                <!-- 'A' Icon Geometry -->
+                                <!-- Left Leg (Dark Blue) -->
+                                <path d="M 45 0 L 5 80 L 30 80 L 58 24 Z" fill="#1D4ED8" />
+                                <!-- Right Leg (Light Blue) -->
+                                <path d="M 45 0 L 62 0 L 102 80 L 77 80 Z" fill="#60A5FA" opacity="0.95" />
+                                <!-- Crossbar Overlap (Vibrant Blue) -->
+                                <path d="M 18 53 L 88 53 L 75 80 L 5 80 Z" fill="#3B82F6" opacity="0.85" />
                                 
-                                <!-- Text -->
-                                <text x="85" y="52" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="800" font-size="48" fill="#0F172A">Aksiana<tspan fill="#2563EB">.</tspan></text>
+                                <!-- Logo Text -->
+                                <text x="120" y="58" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="56" fill="#0F172A">Aksiana<tspan fill="#3B82F6">.</tspan></text>
                                 <!-- Tagline -->
-                                <text x="88" y="72" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="12.5" fill="#64748B" letter-spacing="4.5">DIGITAL FOR LOCAL</text>
+                                <text x="125" y="78" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="14.5" fill="#64748B" letter-spacing="4.5">DIGITAL FOR LOCAL</text>
                             </g>
                         </svg>
+
                     </div>
                 </div>
                 
                 <!-- Action Bar -->
-                <div class="p-6 bg-white flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="p-6 bg-white flex flex-col lg:flex-row justify-between items-center gap-4">
                     <div class="text-sm text-slate-500">
-                        Format: <strong class="text-slate-700">SVG (Scalable Vector Graphics)</strong> &bull; Siap untuk Web HTML
+                        Format: <strong class="text-slate-700">SVG (Vector) &amp; PNG (Raster)</strong> &bull; Siap untuk Web &amp; Desain
                     </div>
-                    <button onclick="copySVG('svg-final-logo')" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-200">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-                        Copy Kode SVG
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 2: COLOR PALETTE -->
-        <section id="colors" class="scroll-mt-24">
-            <div class="mb-8">
-                <h2 class="text-2xl font-bold text-slate-900">2. Palet Warna (Color Palette)</h2>
-                <p class="text-slate-500 mt-2">Kombinasi warna yang membangun rasa percaya, inovasi, dan profesionalitas.</p>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- Color 1 -->
-                <div class="color-card bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
-                    <div class="h-32 rounded-xl bg-blue-600 w-full mb-4 shadow-inner"></div>
-                    <h3 class="font-bold text-slate-900">Aksiana Blue</h3>
-                    <p class="text-xs text-slate-500 mt-1">Warna Utama & Aksen Brand</p>
-                    <div class="mt-4 space-y-1 text-sm font-mono text-slate-600 bg-slate-50 p-2 rounded-lg">
-                        <div>HEX: #2563EB</div>
-                        <div>RGB: 37, 99, 235</div>
-                    </div>
-                </div>
-
-                <!-- Color 2 -->
-                <div class="color-card bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
-                    <div class="h-32 rounded-xl bg-blue-500 w-full mb-4 shadow-inner"></div>
-                    <h3 class="font-bold text-slate-900">Vibrant Tech</h3>
-                    <p class="text-xs text-slate-500 mt-1">Overlap Logo & Interaksi (Hover)</p>
-                    <div class="mt-4 space-y-1 text-sm font-mono text-slate-600 bg-slate-50 p-2 rounded-lg">
-                        <div>HEX: #3B82F6</div>
-                        <div>RGB: 59, 130, 246</div>
-                    </div>
-                </div>
-
-                <!-- Color 3 -->
-                <div class="color-card bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
-                    <div class="h-32 rounded-xl bg-slate-900 w-full mb-4 shadow-inner"></div>
-                    <h3 class="font-bold text-slate-900">Slate Black</h3>
-                    <p class="text-xs text-slate-500 mt-1">Teks Utama & Heading</p>
-                    <div class="mt-4 space-y-1 text-sm font-mono text-slate-600 bg-slate-50 p-2 rounded-lg">
-                        <div>HEX: #0F172A</div>
-                        <div>RGB: 15, 23, 42</div>
-                    </div>
-                </div>
-
-                <!-- Color 4 -->
-                <div class="color-card bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
-                    <div class="h-32 rounded-xl bg-slate-500 w-full mb-4 shadow-inner"></div>
-                    <h3 class="font-bold text-slate-900">Neutral Grey</h3>
-                    <p class="text-xs text-slate-500 mt-1">Tagline & Teks Paragraf</p>
-                    <div class="mt-4 space-y-1 text-sm font-mono text-slate-600 bg-slate-50 p-2 rounded-lg">
-                        <div>HEX: #64748B</div>
-                        <div>RGB: 100, 116, 139</div>
+                    <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+                        <button onclick="copySVG('svg-final-logo')" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all border border-slate-200 text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            Copy SVG
+                        </button>
+                        <button onclick="downloadSVG('svg-final-logo', 'Aksiana_Master_Logo')" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-emerald-100 text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Download SVG
+                        </button>
+                        <button onclick="downloadPNG('svg-final-logo', 'Aksiana_Master_Logo')" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-200 text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Download PNG
+                        </button>
                     </div>
                 </div>
             </div>
@@ -212,14 +172,14 @@
         <p>&copy; 2026 Aksiana. Digital for local.</p>
     </footer>
 
-    <!-- Notifikasi Sukses Copy -->
+    <!-- Notifikasi Sukses Copy/Download -->
     <div id="toast" class="fixed bottom-5 right-5 bg-slate-900 text-white px-6 py-4 rounded-xl shadow-2xl transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3 z-50">
         <div class="bg-emerald-500 rounded-full p-1">
             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
         </div>
         <div>
-            <div class="font-bold">Berhasil Disalin!</div>
-            <div class="text-xs text-slate-300">Kode SVG siap di-paste ke HTML Anda.</div>
+            <div id="toast-title" class="font-bold">Berhasil Disalin!</div>
+            <div id="toast-desc" class="text-xs text-slate-300">Kode SVG siap di-paste ke HTML Anda.</div>
         </div>
     </div>
 
@@ -240,13 +200,93 @@
             
             try {
                 document.execCommand('copy');
-                showToast();
+                showToast('Berhasil Disalin!', 'Kode SVG siap di-paste ke HTML Anda.');
             } catch (err) {
                 alert('Gagal menyalin kode. Silakan block dan copy manual kodenya.');
             }
         }
 
-        function showToast() {
+        function downloadSVG(containerId, filename) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            const svgElement = container.querySelector('svg');
+            if (!svgElement) return;
+
+            // Serialize SVG to XML string
+            const svgData = new XMLSerializer().serializeToString(svgElement);
+            
+            // Create Blob with SVG MIME type
+            const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+            const svgUrl = URL.createObjectURL(svgBlob);
+
+            // Trigger download via temporary anchor
+            const a = document.createElement('a');
+            a.href = svgUrl;
+            a.download = filename + '.svg';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            
+            // Clean up Blob URL
+            URL.revokeObjectURL(svgUrl);
+
+            showToast('Berhasil Di-download!', 'File SVG vektor transparan telah tersimpan.');
+        }
+
+        function downloadPNG(containerId, filename) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            const svgElement = container.querySelector('svg');
+            if (!svgElement) return;
+
+            // 1. Dapatkan string XML dari SVG
+            const svgData = new XMLSerializer().serializeToString(svgElement);
+            
+            // 2. Buat elemen Canvas
+            const canvas = document.createElement('canvas');
+            
+            // Gunakan skala 4x agar hasil PNG sangat tajam (High-Res)
+            const scale = 4; 
+            const width = parseInt(svgElement.getAttribute('width')) || 320;
+            const height = parseInt(svgElement.getAttribute('height')) || 90;
+            
+            canvas.width = width * scale;
+            canvas.height = height * scale;
+            
+            const ctx = canvas.getContext('2d');
+            ctx.scale(scale, scale);
+
+            // 3. Konversi SVG ke Base64
+            const img = new Image();
+            const svgBase64 = btoa(unescape(encodeURIComponent(svgData)));
+            const imgSource = 'data:image/svg+xml;base64,' + svgBase64;
+
+            img.onload = function() {
+                // Gambar SVG ke atas Canvas (Background otomatis transparan jika tidak diberi fill)
+                ctx.drawImage(img, 0, 0);
+                
+                // Ekstrak sebagai file PNG
+                const pngData = canvas.toDataURL('image/png');
+                
+                // Buat link download palsu lalu panggil (click)
+                const a = document.createElement('a');
+                a.href = pngData;
+                a.download = filename + '.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                showToast('Berhasil Di-download!', 'File PNG transparan telah tersimpan.');
+            };
+            img.src = imgSource;
+        }
+
+        function showToast(title, desc) {
+            document.getElementById('toast-title').innerText = title;
+            document.getElementById('toast-desc').innerText = desc;
+            
             const toast = document.getElementById('toast');
             toast.classList.remove('translate-y-20', 'opacity-0');
             
