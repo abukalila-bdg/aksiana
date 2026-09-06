@@ -3,84 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punya Ruang Realty | Ruang Investasi & Properti Masa Depan</title>
+    <title>Punya Ruang Realty | Official Property & Investment Partner</title>
     
-    <!-- Fonts -->
+    <!-- Google Fonts: Montserrat (Heading) & Open Sans (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Icons (FontAwesome) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['"Open Sans"', 'sans-serif'],
                     },
                     colors: {
-                        brand: {
-                            emerald: '#10B981',
-                            navy: '#0F172A',
-                            sky: '#38BDF8',
-                            gray: '#F8FAFC'
+                        rw: {
+                            yellow: '#FCCA36',
+                            yellowHover: '#E0B22A',
+                            charcoal: '#222222',
+                            slate: '#333333',
+                            light: '#F4F4F4',
+                            border: '#E5E5E5'
                         }
-                    },
-                    animation: {
-                        'bounce-slow': 'bounce 3s infinite',
                     }
                 }
             }
         }
     </script>
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #F8FAFC; color: #0F172A; }
-        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            background-color: #FFFFFF; 
+            color: #333333; 
+        }
+        h1, h2, h3, h4, h5, h6, .font-heading { 
+            font-family: 'Montserrat', sans-serif; 
+        }
         .hero-pattern { 
-            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7)), url('assets/hero/bailey-anselme-small.webp');
+            background-image: linear-gradient(rgba(34, 34, 34, 0.85), rgba(34, 34, 34, 0.85)), url('assets/bailey-anselme-small.webp');
             background-size: cover;
             background-position: center;
         }
     </style>
 </head>
-<body class="antialiased selection:bg-brand-emerald selection:text-white">
+<body class="antialiased selection:bg-rw-yellow selection:text-rw-charcoal">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full glass-nav border-b border-gray-100 z-50 transition-all duration-300">
+    <!-- Header / Navbar (Ray White Style) -->
+    <nav class="fixed w-full bg-rw-charcoal border-b-4 border-rw-yellow z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <img src="assets/logo.svg" alt="Punya Ruang Realty Logo" class="w-12 h-12 md:w-14 md:h-14 object-contain transform group-hover:scale-105 transition-transform">
+                <!-- Brand Logo & Name -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <img src="assets/logo.svg" alt="Punya Ruang Realty Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain transition-transform group-hover:scale-105">
                     <div>
-                        <h1 class="font-bold text-lg md:text-xl leading-tight text-brand-navy tracking-tight">Punya Ruang</h1>
-                        <p class="text-[10px] md:text-xs text-brand-emerald font-semibold uppercase tracking-widest">Realty</p>
+                        <span class="font-heading font-black text-lg md:text-xl text-white uppercase tracking-wider block leading-tight">PUNYA RUANG</span>
+                        <span class="font-heading font-bold text-xs md:text-sm text-rw-yellow uppercase tracking-widest block">REALTY</span>
                     </div>
                 </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#beranda" class="text-sm font-medium text-gray-600 hover:text-brand-emerald transition-colors">Beranda</a>
-                    <a href="#keunggulan" class="text-sm font-medium text-gray-600 hover:text-brand-emerald transition-colors">Keunggulan</a>
-                    <a href="#area-layanan" class="text-sm font-medium text-gray-600 hover:text-brand-emerald transition-colors">Area Layanan</a>
-                    <a href="#kontak" class="text-sm font-medium text-gray-600 hover:text-brand-emerald transition-colors">Kontak</a>
+                    <a href="#beranda" class="font-heading font-bold text-xs text-gray-300 hover:text-rw-yellow uppercase tracking-widest transition-colors">Beranda</a>
+                    <a href="#keunggulan" class="font-heading font-bold text-xs text-gray-300 hover:text-rw-yellow uppercase tracking-widest transition-colors">Keunggulan</a>
+                    <a href="#area-layanan" class="font-heading font-bold text-xs text-gray-300 hover:text-rw-yellow uppercase tracking-widest transition-colors">Area Layanan</a>
+                    <a href="#jenis-properti" class="font-heading font-bold text-xs text-gray-300 hover:text-rw-yellow uppercase tracking-widest transition-colors">Jenis Properti</a>
+                    <a href="#kontak" class="font-heading font-bold text-xs text-gray-300 hover:text-rw-yellow uppercase tracking-widest transition-colors">Kontak</a>
                 </div>
 
-                <!-- CTA Button -->
-                <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20properti%20Punya%20Ruang%20Realty." target="_blank" class="hidden md:inline-flex items-center gap-2 bg-brand-emerald hover:bg-emerald-600 text-white text-sm font-semibold py-2.5 px-6 rounded-full transition-all shadow-lg hover:shadow-brand-emerald/40 hover:-translate-y-0.5">
+                <!-- Right Action Button -->
+                <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20ingin%20konsultasi%20mengenai%20properti%20di%20Punya%20Ruang%20Realty." target="_blank" class="hidden md:inline-flex items-center gap-2 bg-rw-yellow hover:bg-rw-yellowHover text-rw-charcoal font-heading font-extrabold text-xs px-6 py-3 uppercase tracking-wider transition-all shadow-md">
                     <i class="fab fa-whatsapp text-lg"></i>
-                    Konsultasi Gratis via WA
+                    KONSULTASI WA
                 </a>
 
-                <!-- Mobile menu button -->
+                <!-- Mobile Action Button -->
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-600 hover:text-brand-navy focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
+                    <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20ingin%20konsultasi%20mengenai%20properti%20di%20Punya%20Ruang%20Realty." target="_blank" class="inline-flex items-center gap-1.5 bg-rw-yellow text-rw-charcoal font-heading font-extrabold text-[11px] px-3.5 py-2 uppercase tracking-wider">
+                        <i class="fab fa-whatsapp text-base"></i>
+                        WA
+                    </a>
                 </div>
             </div>
         </div>
@@ -88,256 +96,304 @@
 
     <!-- Hero Section -->
     <section id="beranda" class="relative pt-20 hero-pattern min-h-[90vh] flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12 md:py-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-16 md:py-24">
             <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium mb-6">
-                    <span class="w-2 h-2 rounded-full bg-brand-emerald animate-pulse"></span>
-                    Investasi Properti Terpercaya
+                <!-- Top Badge -->
+                <div class="inline-block bg-rw-yellow text-rw-charcoal font-heading font-extrabold text-xs md:text-sm px-4 py-1.5 uppercase tracking-wider mb-6">
+                    OFFICIAL PROPERTY & INVESTMENT PARTNER
                 </div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-                    Temukan Properti & <span class="text-brand-emerald">Ruang Investasi</span> Masa Depan Anda.
+                
+                <!-- Main Headline -->
+                <h1 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-white uppercase tracking-tight leading-none mb-6">
+                    TEMUKAN PROPERTI & <span class="text-rw-yellow">RUANG INVESTASI</span> MASA DEPAN ANDA
                 </h1>
-                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
-                    Punya Ruang Realty menghadirkan pilihan rumah, tanah, ruko, dan properti investasi di lokasi paling potensial kawasan Jabodetabek & Bandung Raya.
+                
+                <!-- Sub-headline -->
+                <p class="font-body text-base md:text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl">
+                    Punya Ruang Realty menghadirkan pilihan rumah, tanah, ruko, dan properti investasi potensial di Jabodetabek & Bandung Raya.
                 </p>
                 
+                <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#properti" class="inline-flex justify-center items-center gap-2 bg-brand-emerald hover:bg-emerald-500 text-white text-base font-bold py-4 px-8 rounded-xl transition-all shadow-lg shadow-brand-emerald/30">
-                        Cari Properti Sekarang
-                        <i class="fas fa-arrow-right"></i>
+                    <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20ingin%20konsultasi%20mengenai%20properti%20di%20Punya%20Ruang%20Realty." target="_blank" class="inline-flex justify-center items-center gap-3 bg-rw-yellow hover:bg-rw-yellowHover text-rw-charcoal font-heading font-extrabold text-sm md:text-base px-8 py-4 uppercase tracking-wider transition-all shadow-xl">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        KONSULTASI PROPERTI SEKARANG
                     </a>
-                    <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20tertarik%20untuk%20berdiskusi%20tentang%20properti%20investasi." target="_blank" class="inline-flex justify-center items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-base font-bold py-4 px-8 rounded-xl transition-all">
-                        <i class="fab fa-whatsapp text-xl"></i>
-                        Tanya via WhatsApp
+                    <a href="#jenis-properti" class="inline-flex justify-center items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-rw-charcoal font-heading font-bold text-sm md:text-base px-8 py-4 uppercase tracking-wider transition-all">
+                        LIHAT LAYANAN PROPERTI
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6 Value Proposition (USP) -->
-    <section id="keunggulan" class="py-24 bg-white">
+    <!-- Value Proposition Section (6 Keunggulan Utama / USP) -->
+    <section id="keunggulan" class="py-20 bg-rw-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-brand-emerald font-bold tracking-wide uppercase text-sm mb-3">Keunggulan Kami</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold text-brand-navy">Mengapa Memilih Punya Ruang Realty?</h3>
-                <p class="mt-4 text-gray-600 text-lg">Kami tidak hanya menjual bangunan, kami membantu Anda menemukan nilai investasi terbaik.</p>
+                <span class="font-heading font-extrabold text-rw-charcoal uppercase tracking-widest text-xs bg-rw-yellow px-3 py-1 inline-block mb-3">STANDAR LAYANAN KAMI</span>
+                <h2 class="font-heading font-black text-2xl md:text-4xl text-rw-charcoal uppercase tracking-tight">MENGAPA MEMILIH PUNYA RUANG REALTY?</h2>
+                <div class="w-20 h-1 bg-rw-yellow mx-auto mt-4"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-brand-gray p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm mb-6 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
-                        <i class="fas fa-house-chimney text-2xl"></i>
+                <div class="bg-white p-8 border-t-4 border-rw-yellow border-x border-b border-rw-border hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-rw-charcoal text-rw-yellow flex items-center justify-center mb-6 group-hover:bg-rw-yellow group-hover:text-rw-charcoal transition-colors">
+                        <i class="fas fa-house-user text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-brand-navy mb-3">Properti untuk Dimiliki & Dikembangkan</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">Pilihan rumah, tanah, dan ruko sesuai kebutuhan hunian maupun rencana perluasan aset Anda.</p>
+                    <h3 class="font-heading font-bold text-lg text-rw-charcoal uppercase mb-3 leading-snug">PROPERTI UNTUK DIMILIKI & DIKEMBANGKAN</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">Pilihan rumah, tanah, dan ruko sesuai kebutuhan hunian maupun rencana ekspansi aset Anda.</p>
                 </div>
+
                 <!-- Card 2 -->
-                <div class="bg-brand-gray p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm mb-6 text-brand-sky group-hover:bg-brand-sky group-hover:text-white transition-colors">
-                        <i class="fas fa-map-location-dot text-2xl"></i>
+                <div class="bg-white p-8 border-t-4 border-rw-yellow border-x border-b border-rw-border hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-rw-charcoal text-rw-yellow flex items-center justify-center mb-6 group-hover:bg-rw-yellow group-hover:text-rw-charcoal transition-colors">
+                        <i class="fas fa-map-marked-alt text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-brand-navy mb-3">Fokus pada Lokasi Potensial</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">Kawasan dengan akses terbaik, fasilitas lengkap, dan jaminan nilai tumbuh properti yang tinggi.</p>
+                    <h3 class="font-heading font-bold text-lg text-rw-charcoal uppercase mb-3 leading-snug">FOKUS PADA LOKASI POTENSIAL</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">Kawasan strategis dengan akses jaringan transportasi terbaik, fasilitas umum lengkap, dan nilai apresiasi tinggi.</p>
                 </div>
+
                 <!-- Card 3 -->
-                <div class="bg-brand-gray p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm mb-6 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
-                        <i class="fas fa-chart-line text-2xl"></i>
+                <div class="bg-white p-8 border-t-4 border-rw-yellow border-x border-b border-rw-border hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-rw-charcoal text-rw-yellow flex items-center justify-center mb-6 group-hover:bg-rw-yellow group-hover:text-rw-charcoal transition-colors">
+                        <i class="fas fa-chart-line text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-brand-navy mb-3">Bukan Sekadar Jual Properti</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">Kami menyajikan analisis fungsi, komparasi harga, potensi sewa, hingga peluang pertumbuhan investasi.</p>
+                    <h3 class="font-heading font-bold text-lg text-rw-charcoal uppercase mb-3 leading-snug">BUKAN SEKADAR JUAL PROPERTI</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">Analisis komprehensif mengenai fungsi bangunan, komparasi harga pasar, potensi yield sewa, hingga estimasi capital gain.</p>
                 </div>
+
                 <!-- Card 4 -->
-                <div class="bg-brand-gray p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm mb-6 text-brand-navy group-hover:bg-brand-navy group-hover:text-white transition-colors">
-                        <i class="fas fa-magnifying-glass-chart text-2xl"></i>
+                <div class="bg-white p-8 border-t-4 border-rw-yellow border-x border-b border-rw-border hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-rw-charcoal text-rw-yellow flex items-center justify-center mb-6 group-hover:bg-rw-yellow group-hover:text-rw-charcoal transition-colors">
+                        <i class="fas fa-file-contract text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-brand-navy mb-3">Informasi Lebih Transparan</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">Detail listing, legalitas, dan spesifikasi disampaikan secara jelas, objektif, dan mudah dipahami.</p>
+                    <h3 class="font-heading font-bold text-lg text-rw-charcoal uppercase mb-3 leading-snug">INFORMASI LEBIH TRANSPARAN</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">Detail listing, status legalitas, serta spesifikasi fisik disajikan secara rasional, objektif, dan transparan.</p>
                 </div>
+
                 <!-- Card 5 -->
-                <div class="bg-brand-gray p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm mb-6 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-colors">
-                        <i class="fas fa-wallet text-2xl"></i>
+                <div class="bg-white p-8 border-t-4 border-rw-yellow border-x border-b border-rw-border hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-rw-charcoal text-rw-yellow flex items-center justify-center mb-6 group-hover:bg-rw-yellow group-hover:text-rw-charcoal transition-colors">
+                        <i class="fas fa-hand-holding-usd text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-brand-navy mb-3">Pilihan Sesuai Tujuan & Budget</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">Pendampingan kustomisasi pencarian sesuai ketersediaan dana dan rencana jangka panjang Anda.</p>
+                    <h3 class="font-heading font-bold text-lg text-rw-charcoal uppercase mb-3 leading-snug">PILIHAN SESUAI TUJUAN & BUDGET</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">Pendampingan kustomisasi untuk mencocokkan alokasi dana dengan pilihan properti yang realistis dan menguntungkan.</p>
                 </div>
+
                 <!-- Card 6 -->
-                <div class="bg-brand-gray p-8 rounded-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group">
-                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm mb-6 text-brand-sky group-hover:bg-brand-sky group-hover:text-white transition-colors">
-                        <i class="fas fa-seedling text-2xl"></i>
+                <div class="bg-white p-8 border-t-4 border-rw-yellow border-x border-b border-rw-border hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-rw-charcoal text-rw-yellow flex items-center justify-center mb-6 group-hover:bg-rw-yellow group-hover:text-rw-charcoal transition-colors">
+                        <i class="fas fa-city text-xl"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-brand-navy mb-3">Ruang untuk Masa Depan</h4>
-                    <p class="text-gray-600 leading-relaxed text-sm">Mengedukasi dan memaksimalkan fungsi properti Anda sebagai aset yang bernilai tinggi di masa depan.</p>
+                    <h3 class="font-heading font-bold text-lg text-rw-charcoal uppercase mb-3 leading-snug">RUANG UNTUK MASA DEPAN</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">Memaksimalkan fungsi properti sebagai instrumen perlindungan nilai dan portofolio aset masa depan keluarga Anda.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Area Coverage & Layanan Properti -->
-    <section id="area-layanan" class="py-24 bg-brand-gray border-t border-gray-200">
+    <!-- Area Coverage Section -->
+    <section id="area-layanan" class="py-20 bg-white border-t border-rw-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <!-- Area Coverage -->
-                <div>
-                    <h2 class="text-3xl font-extrabold text-brand-navy mb-6">Area Layanan Utama</h2>
-                    <p class="text-gray-600 mb-8 text-lg">Kami memetakan listing terbaik di dua kawasan paling strategis dengan pertumbuhan nilai investasi yang pesat.</p>
-                    
-                    <div class="space-y-4">
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-5">
-                            <div class="w-16 h-16 rounded-full bg-brand-sky/10 flex items-center justify-center text-brand-sky shrink-0">
-                                <i class="fas fa-city text-3xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-brand-navy mb-1">Jabodetabek</h4>
-                                <p class="text-gray-500 text-sm">Jakarta, Bogor, Depok, Tangerang</p>
-                            </div>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="font-heading font-extrabold text-rw-charcoal uppercase tracking-widest text-xs bg-rw-yellow px-3 py-1 inline-block mb-3">WILAYAH OPERASIONAL</span>
+                <h2 class="font-heading font-black text-2xl md:text-4xl text-rw-charcoal uppercase tracking-tight">CAKUPAN AREA LISTING UTAMA</h2>
+                <div class="w-20 h-1 bg-rw-yellow mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Jabodetabek Badge -->
+                <div class="bg-rw-charcoal text-white p-8 md:p-10 border-l-8 border-rw-yellow relative overflow-hidden">
+                    <div class="flex items-center gap-5 mb-4">
+                        <div class="w-14 h-14 bg-rw-yellow text-rw-charcoal flex items-center justify-center text-2xl shrink-0 font-heading font-black">
+                            <i class="fas fa-building"></i>
                         </div>
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-5">
-                            <div class="w-16 h-16 rounded-full bg-brand-emerald/10 flex items-center justify-center text-brand-emerald shrink-0">
-                                <i class="fas fa-mountain-city text-3xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-brand-navy mb-1">Bandung Raya</h4>
-                                <p class="text-gray-500 text-sm">Kota Bandung & Cimahi</p>
-                            </div>
+                        <div>
+                            <h3 class="font-heading font-extrabold text-2xl text-rw-yellow uppercase tracking-wide">JABODETABEK</h3>
+                            <p class="font-body text-gray-300 text-sm">Kawasan Megapolitan Strategis</p>
                         </div>
+                    </div>
+                    <div class="pt-4 border-t border-gray-700 flex flex-wrap gap-2">
+                        <span class="bg-white/10 font-heading font-bold text-xs uppercase px-3 py-1.5 text-gray-200 border border-white/20">JAKARTA</span>
+                        <span class="bg-white/10 font-heading font-bold text-xs uppercase px-3 py-1.5 text-gray-200 border border-white/20">BOGOR</span>
+                        <span class="bg-white/10 font-heading font-bold text-xs uppercase px-3 py-1.5 text-gray-200 border border-white/20">DEPOK</span>
+                        <span class="bg-white/10 font-heading font-bold text-xs uppercase px-3 py-1.5 text-gray-200 border border-white/20">TANGERANG</span>
                     </div>
                 </div>
 
-                <!-- Jenis Properti -->
-                <div id="properti">
-                    <h2 class="text-3xl font-extrabold text-brand-navy mb-6">Layanan & Jenis Properti</h2>
-                    <p class="text-gray-600 mb-8 text-lg">Pilihan kategori properti yang kami kurasi khusus untuk memenuhi kebutuhan Anda.</p>
-                    
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-emerald transition-colors text-center group cursor-pointer">
-                            <i class="fas fa-home text-3xl text-gray-400 group-hover:text-brand-emerald mb-3 transition-colors"></i>
-                            <h5 class="font-bold text-brand-navy">Rumah Hunian</h5>
+                <!-- Bandung Raya Badge -->
+                <div class="bg-rw-charcoal text-white p-8 md:p-10 border-l-8 border-rw-yellow relative overflow-hidden">
+                    <div class="flex items-center gap-5 mb-4">
+                        <div class="w-14 h-14 bg-rw-yellow text-rw-charcoal flex items-center justify-center text-2xl shrink-0 font-heading font-black">
+                            <i class="fas fa-mountain"></i>
                         </div>
-                        <div class="bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-emerald transition-colors text-center group cursor-pointer">
-                            <i class="fas fa-layer-group text-3xl text-gray-400 group-hover:text-brand-emerald mb-3 transition-colors"></i>
-                            <h5 class="font-bold text-brand-navy">Tanah Plot / Kavling</h5>
+                        <div>
+                            <h3 class="font-heading font-extrabold text-2xl text-rw-yellow uppercase tracking-wide">BANDUNG RAYA</h3>
+                            <p class="font-body text-gray-300 text-sm">Pusat Pertumbuhan Hunian & Komersial</p>
                         </div>
-                        <div class="bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-emerald transition-colors text-center group cursor-pointer">
-                            <i class="fas fa-store text-3xl text-gray-400 group-hover:text-brand-emerald mb-3 transition-colors"></i>
-                            <h5 class="font-bold text-brand-navy">Ruko & Ruang Usaha</h5>
-                        </div>
-                        <div class="bg-white p-5 rounded-xl border border-gray-200 hover:border-brand-emerald transition-colors text-center group cursor-pointer">
-                            <i class="fas fa-chart-pie text-3xl text-gray-400 group-hover:text-brand-emerald mb-3 transition-colors"></i>
-                            <h5 class="font-bold text-brand-navy">Properti Investasi</h5>
-                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-gray-700 flex flex-wrap gap-2">
+                        <span class="bg-white/10 font-heading font-bold text-xs uppercase px-3 py-1.5 text-gray-200 border border-white/20">BANDUNG</span>
+                        <span class="bg-white/10 font-heading font-bold text-xs uppercase px-3 py-1.5 text-gray-200 border border-white/20">CIMAHI</span>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section class="py-20 bg-brand-navy relative overflow-hidden">
-        <!-- Abstract Shapes for Background -->
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-brand-emerald opacity-10 blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-brand-sky opacity-10 blur-3xl"></div>
-        
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-                Bingung Menentukan Properti yang Tepat untuk Budget Anda?
+    <!-- Jenis Properti & Layanan -->
+    <section id="jenis-properti" class="py-20 bg-rw-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="font-heading font-extrabold text-rw-charcoal uppercase tracking-widest text-xs bg-rw-yellow px-3 py-1 inline-block mb-3">PORTOFOLIO ASET</span>
+                <h2 class="font-heading font-black text-2xl md:text-4xl text-rw-charcoal uppercase tracking-tight">JENIS PROPERTI & LAYANAN</h2>
+                <div class="w-20 h-1 bg-rw-yellow mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Category 1 -->
+                <div class="bg-white p-8 border border-rw-border text-center hover:border-rw-yellow hover:shadow-lg transition-all group">
+                    <div class="w-16 h-16 bg-rw-light text-rw-charcoal rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rw-yellow transition-colors">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-extrabold text-base text-rw-charcoal uppercase mb-2">RUMAH HUNIAN</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Rumah tinggal siap huni, rumah indent, hingga townhouse premium.</p>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-white p-8 border border-rw-border text-center hover:border-rw-yellow hover:shadow-lg transition-all group">
+                    <div class="w-16 h-16 bg-rw-light text-rw-charcoal rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rw-yellow transition-colors">
+                        <i class="fas fa-vector-square text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-extrabold text-base text-rw-charcoal uppercase mb-2">TANAH PLOT / KAVLING</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Kavling siap bangun di kawasan permukiman maupun zona komersial.</p>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="bg-white p-8 border border-rw-border text-center hover:border-rw-yellow hover:shadow-lg transition-all group">
+                    <div class="w-16 h-16 bg-rw-light text-rw-charcoal rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rw-yellow transition-colors">
+                        <i class="fas fa-store text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-extrabold text-base text-rw-charcoal uppercase mb-2">RUKO & RUANG USAHA</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Bangunan komersial, ruko pinggir jalan utama, dan ruang usaha strategis.</p>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="bg-white p-8 border border-rw-border text-center hover:border-rw-yellow hover:shadow-lg transition-all group">
+                    <div class="w-16 h-16 bg-rw-light text-rw-charcoal rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rw-yellow transition-colors">
+                        <i class="fas fa-coins text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-extrabold text-base text-rw-charcoal uppercase mb-2">PROPERTI INVESTASI</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Aset produktif dengan potensi cashflow sewa serta capital gain tinggi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner (Lead Generation Center) -->
+    <section class="py-20 bg-rw-charcoal text-white relative border-y-4 border-rw-yellow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="font-heading font-extrabold text-rw-charcoal uppercase tracking-widest text-xs bg-rw-yellow px-4 py-1.5 inline-block mb-6">KONSULTASI GRATIS 24 JAM</span>
+            
+            <h2 class="font-heading font-black text-2xl sm:text-4xl text-white uppercase tracking-tight mb-6 leading-tight">
+                BINGUNG MENENTUKAN PROPERTI YANG TEPAT UNTUK BUDGET ANDA?
             </h2>
-            <p class="text-xl text-gray-300 mb-10">
-                Diskusi langsung bersama tim Punya Ruang Realty untuk mendapatkan rekomendasi listing terbaik dan strategi investasi yang tepat sasaran.
+            
+            <p class="font-body text-gray-300 text-base md:text-lg mb-10 leading-relaxed max-w-2xl mx-auto">
+                Diskusi langsung bersama tim Punya Ruang Realty untuk mendapatkan rekomendasi listing terbaik dan analisa potensi investasi secara akurat.
             </p>
-            <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20bingung%20menentukan%20properti.%20Bisa%20bantu%20rekomendasi%20sesuai%20budget%20saya?" target="_blank" class="inline-flex items-center gap-3 bg-brand-emerald hover:bg-emerald-500 text-white text-lg font-bold py-4 px-10 rounded-full transition-all shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transform hover:-translate-y-1">
+            
+            <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20bingung%20menentukan%20properti.%20Bisa%20bantu%20rekomendasi%20sesuai%20budget%20saya?" target="_blank" class="inline-flex items-center gap-3 bg-rw-yellow hover:bg-rw-yellowHover text-rw-charcoal font-heading font-black text-sm sm:text-base px-8 py-5 uppercase tracking-wider transition-all shadow-2xl hover:scale-105">
                 <i class="fab fa-whatsapp text-2xl"></i>
-                Hubungi Aditya via WhatsApp (24 Jam)
+                HUBUNGI ADITYA VIA WHATSAPP (24 JAM)
             </a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="kontak" class="bg-white pt-16 pb-8 border-t border-gray-200">
+    <!-- Footer (Ray White Style) -->
+    <footer id="kontak" class="bg-rw-charcoal text-white pt-16 pb-12 border-t-4 border-rw-yellow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 
-                <!-- Brand Col -->
+                <!-- Brand Info -->
                 <div class="lg:col-span-2">
-                    <div class="flex items-center gap-3 mb-6">
-                        <img src="assets/logo.svg" alt="Punya Ruang Realty Logo" class="w-12 h-12 md:w-14 md:h-14 object-contain transform group-hover:scale-105 transition-transform">
+                    <div class="flex items-center gap-3.5 mb-6">
+                        <img src="assets/logo.svg" alt="Punya Ruang Realty Logo" class="w-12 h-12 object-contain">
                         <div>
-                            <h4 class="font-bold text-xl text-brand-navy">Punya Ruang Realty</h4>
-                            <p class="text-sm text-brand-emerald font-semibold">Ruang Investasi.</p>
+                            <span class="font-heading font-black text-xl text-white uppercase tracking-wider block leading-tight">PUNYA RUANG</span>
+                            <span class="font-heading font-bold text-sm text-rw-yellow uppercase tracking-widest block">REALTY</span>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-6 max-w-sm">
-                        Mitra terpercaya Anda dalam menemukan hunian idaman dan aset properti berkinerja tinggi di kawasan strategis.
+                    <p class="font-body text-gray-400 text-sm mb-6 max-w-md italic">
+                        "Punya Ruang, Ruang Investasi."
                     </p>
-                    <div class="flex items-center gap-4">
-                        <a href="https://www.tiktok.com/@punya.ruang.realty" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-brand-navy hover:bg-brand-navy hover:text-white transition-colors">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                        <a href="https://wa.me/6281224866614" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-brand-emerald hover:bg-brand-emerald hover:text-white transition-colors">
-                            <i class="fab fa-whatsapp text-lg"></i>
-                        </a>
-                    </div>
+                    <p class="font-body text-gray-300 text-sm leading-relaxed max-w-md">
+                        Mitra terpercaya Anda dalam memetakan, menemukan, dan mengamankan properti hunian serta aset investasi berkinerja tinggi di Jabodetabek & Bandung Raya.
+                    </p>
                 </div>
 
-                <!-- Contact Info -->
+                <!-- Kontak PIC Aditya -->
                 <div>
-                    <h5 class="font-bold text-brand-navy mb-6 uppercase text-sm tracking-wider">Kontak Kami</h5>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3 text-gray-600">
-                            <i class="fas fa-user mt-1 text-brand-sky"></i>
+                    <h4 class="font-heading font-extrabold text-sm text-rw-yellow uppercase tracking-widest mb-6 border-b border-gray-700 pb-2">KONTAK ADITYA</h4>
+                    <ul class="space-y-4 font-body text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-user-check text-rw-yellow mt-1"></i>
                             <span><strong>PIC:</strong> Aditya</span>
                         </li>
-                        <li class="flex items-start gap-3 text-gray-600">
-                            <i class="fab fa-whatsapp mt-1 text-brand-emerald text-lg"></i>
-                            <a href="https://wa.me/6281224866614" class="hover:text-brand-emerald transition-colors">0812-2486-6614 <br><span class="text-xs text-gray-400">(Layanan 24 Jam)</span></a>
+                        <li class="flex items-start gap-3">
+                            <i class="fab fa-whatsapp text-rw-yellow text-base mt-1"></i>
+                            <div>
+                                <a href="https://wa.me/6281224866614" target="_blank" class="hover:text-rw-yellow transition-colors font-semibold">081224866614</a>
+                                <span class="block text-xs text-gray-400">(Layanan 24 Jam)</span>
+                            </div>
                         </li>
-                        <li class="flex items-start gap-3 text-gray-600">
-                            <i class="fas fa-envelope mt-1 text-gray-400"></i>
-                            <a href="mailto:punyaruang.realty@gmail.com" class="hover:text-brand-navy transition-colors text-sm break-all">punyaruang.realty@gmail.com</a>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-rw-yellow mt-1"></i>
+                            <a href="mailto:punyaruang.realty@gmail.com" class="hover:text-rw-yellow transition-colors text-xs break-all">punyaruang.realty@gmail.com</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fab fa-tiktok text-rw-yellow mt-1"></i>
+                            <a href="https://www.tiktok.com/@punya.ruang.realty" target="_blank" class="hover:text-rw-yellow transition-colors font-semibold">@punya.ruang.realty</a>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Office -->
+                <!-- Lokasi Kantor & Jam Kerja -->
                 <div>
-                    <h5 class="font-bold text-brand-navy mb-6 uppercase text-sm tracking-wider">Lokasi Kantor</h5>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3 text-gray-600">
-                            <i class="fas fa-location-dot mt-1 text-red-500"></i>
-                            <span>Komp. Nusa Hijau Cimahi<br>Jawa Barat, Indonesia</span>
+                    <h4 class="font-heading font-extrabold text-sm text-rw-yellow uppercase tracking-widest mb-6 border-b border-gray-700 pb-2">LOKASI KANTOR</h4>
+                    <ul class="space-y-4 font-body text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-rw-yellow mt-1"></i>
+                            <span>Komp. Nusa Hijau Cimahi,<br>Jawa Barat, Indonesia</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-clock text-rw-yellow mt-1"></i>
+                            <span><strong>Jam Operasional:</strong><br>24 Jam Non-stop</span>
                         </li>
                     </ul>
                 </div>
 
             </div>
-            
-            <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-sm text-gray-500 text-center md:text-left">
-                    &copy; 2026 Punya Ruang Realty. All rights reserved.
-                </p>
-                <div class="text-sm text-gray-500 font-medium">
-                    Desain oleh <span class="text-brand-emerald">Aksiana</span>
-                </div>
+
+            <!-- Copyright line -->
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-body text-gray-400">
+                <p>&copy; 2026 Punya Ruang Realty. All Rights Reserved.</p>
+                <p>Designed for High Conversion Lead Generation.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20tertarik%20dengan%20layanan%20Punya%20Ruang%20Realty.%20Mohon%20informasinya." target="_blank" class="fixed bottom-6 right-6 z-50 bg-brand-emerald text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(16,185,129,0.5)] hover:scale-110 transition-transform group">
-        <!-- Pulse effect -->
-        <span class="absolute w-full h-full rounded-full bg-brand-emerald opacity-50 animate-ping"></span>
-        <i class="fab fa-whatsapp text-3xl relative z-10"></i>
-        <!-- Tooltip -->
-        <span class="absolute right-16 bg-brand-navy text-white text-xs font-semibold px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg pointer-events-none">
-            Chat 24 Jam
-            <!-- Arrow -->
-            <svg class="absolute -right-1 top-1/2 -translate-y-1/2 w-2 h-4 text-brand-navy" fill="currentColor" viewBox="0 0 8 16"><path d="M0 0l8 8-8 8V0z"/></svg>
+    <!-- Floating WhatsApp Button (Ray White Yellow + Pulse) -->
+    <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20ingin%20konsultasi%20mengenai%20properti%20di%20Punya%20Ruang%20Realty." target="_blank" class="fixed bottom-6 right-6 z-50 bg-rw-yellow text-rw-charcoal w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform group">
+        <!-- Pulse ring animation -->
+        <span class="absolute w-full h-full rounded-full bg-rw-yellow opacity-75 animate-ping"></span>
+        <i class="fab fa-whatsapp text-3xl relative z-10 text-rw-charcoal"></i>
+        <!-- Tooltip Badge -->
+        <span class="absolute right-16 bg-rw-charcoal text-rw-yellow text-xs font-heading font-bold px-3 py-1.5 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl border border-rw-yellow pointer-events-none">
+            KONSULTASI 24 JAM
         </span>
     </a>
 
