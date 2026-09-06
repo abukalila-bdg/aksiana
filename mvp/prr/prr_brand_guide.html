@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Guidelines | Punya Ruang Realty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            emerald: '#10B981',
+                            navy: '#0F172A',
+                            sky: '#38BDF8',
+                            gray: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #F8FAFC; color: #0F172A; }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-emerald selection:text-white pb-20">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <!-- Mini Logo Header -->
+                    <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 70 V 40 L 50 20 L 75 40 V 70 Z" fill="none" stroke="#0F172A" stroke-width="8" stroke-linejoin="round"/>
+                        <path d="M40 70 V 50 L 50 40 L 60 50 V 70" fill="none" stroke="#10B981" stroke-width="6" stroke-linejoin="round"/>
+                        <circle cx="50" cy="40" r="4" fill="#38BDF8"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-bold text-lg leading-tight text-brand-navy">Punya Ruang Realty</h1>
+                        <p class="text-xs text-gray-500 font-medium">Brand Guidelines</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex gap-3">
+                    <button onclick="downloadPNG()" class="inline-flex items-center gap-2 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-semibold py-2.5 px-5 rounded-full transition-colors shadow-sm">
+                        Unduh PNG
+                    </button>
+                    <button onclick="downloadSVG()" class="inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-emerald text-white text-sm font-semibold py-2.5 px-5 rounded-full transition-colors shadow-lg hover:shadow-brand-emerald/30">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Unduh SVG
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+        <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-brand-emerald/10 text-brand-emerald font-semibold text-sm">
+            Visual Standard Manual
+        </div>
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-navy mb-6">
+            Panduan Brand Identity & Visual Standard
+        </h2>
+        <p class="mt-4 max-w-2xl text-lg text-gray-600 mx-auto leading-relaxed">
+            Mewakili komitmen kami terhadap <strong>Investasi, Kepercayaan, dan Pertumbuhan Aset</strong>. Panduan ini dirancang untuk menjaga konsistensi visual dan identitas Punya Ruang Realty di seluruh platform dan area layanan (Jabodetabek & Bandung Raya).
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+        
+        <section id="logo-asset" class="scroll-mt-24">
+            <div class="border-b border-gray-200 pb-4 mb-8">
+                <h3 class="text-2xl font-bold text-brand-navy">1. Logo Asset & Clear Space</h3>
+                <p class="text-gray-500 mt-2">Variasi logo utama (Vertikal) dan sekunder (Horizontal).</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center relative group">
+                    <div class="absolute top-4 left-4 text-xs font-bold text-gray-400">PRIMARY (VERTICAL)</div>
+                    
+                    <!-- SVG Logo Utama -->
+                    <svg id="primary-logo-svg" class="w-64 h-64 my-8" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="400" fill="transparent"/>
+                        <path d="M100 280 V 160 L 200 80 L 300 160 V 280 Z" fill="none" stroke="#0F172A" stroke-width="24" stroke-linejoin="round"/>
+                        <path d="M150 280 V 200 L 200 150 L 250 200 V 280" fill="none" stroke="#10B981" stroke-width="20" stroke-linejoin="round"/>
+                        <circle cx="200" cy="150" r="16" fill="#38BDF8"/>
+                        
+                        <text x="200" y="340" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A" text-anchor="middle" letter-spacing="1">PUNYA RUANG</text>
+                        <text x="200" y="375" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="18" fill="#10B981" text-anchor="middle" letter-spacing="8">REALTY</text>
+                        <text x="200" y="395" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="10" fill="#64748B" text-anchor="middle" letter-spacing="2">PUNYA RUANG, RUANG INVESTASI.</text>
+                    </svg>
+
+                    <div class="mt-4 flex flex-col sm:flex-row gap-3 w-full justify-center">
+                        <button onclick="downloadPNG()" class="w-full sm:w-auto bg-gray-100 hover:bg-gray-200 text-brand-navy font-semibold py-3 px-6 rounded-xl transition-all shadow-sm flex justify-center items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Unduh (.png)
+                        </button>
+                        <button onclick="downloadSVG()" class="w-full sm:w-auto bg-brand-emerald hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-xl transition-all shadow-md flex justify-center items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Unduh (.svg)
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-brand-navy p-8 rounded-2xl shadow-sm border border-brand-navy flex flex-col items-center justify-center relative">
+                    <div class="absolute top-4 left-4 text-xs font-bold text-gray-400">SECONDARY (HORIZONTAL - REVERSED)</div>
+                    
+                    <!-- SVG Logo Sekunder -->
+                    <svg class="w-full h-32 my-auto" viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(20, 25)">
+                            <path d="M10 80 V 40 L 40 15 L 70 40 V 80 Z" fill="none" stroke="#F8FAFC" stroke-width="8" stroke-linejoin="round"/>
+                            <path d="M25 80 V 55 L 40 40 L 55 55 V 80" fill="none" stroke="#10B981" stroke-width="6" stroke-linejoin="round"/>
+                            <circle cx="40" cy="40" r="6" fill="#38BDF8"/>
+                        </g>
+                        <text x="120" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="42" fill="#F8FAFC" letter-spacing="1">PUNYA RUANG</text>
+                        <text x="120" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="18" fill="#10B981" letter-spacing="8">REALTY</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="colors" class="scroll-mt-24">
+            <div class="border-b border-gray-200 pb-4 mb-8">
+                <h3 class="text-2xl font-bold text-brand-navy">2. Color Palette Standard</h3>
+                <p class="text-gray-500 mt-2">Palet warna resmi yang membangun identitas visual Punya Ruang Realty.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div class="h-32 bg-brand-emerald w-full"></div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-brand-navy text-lg">Emerald Green</h4>
+                        <p class="text-xs text-gray-500 font-mono mt-1">HEX: #10B981 | RGB: 16,185,129</p>
+                        <p class="text-sm mt-3 text-gray-600">Primary Accent. Mewakili pertumbuhan aset, profitabilitas, dan investasi berkelanjutan.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div class="h-32 bg-brand-navy w-full"></div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-brand-navy text-lg">Deep Navy Slate</h4>
+                        <p class="text-xs text-gray-500 font-mono mt-1">HEX: #0F172A | RGB: 15,23,42</p>
+                        <p class="text-sm mt-3 text-gray-600">Primary Base. Mewakili profesionalisme, stabilitas, fondasi yang kuat, dan kepastian hukum.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div class="h-32 bg-brand-sky w-full"></div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-brand-navy text-lg">Sky Blue</h4>
+                        <p class="text-xs text-gray-500 font-mono mt-1">HEX: #38BDF8 | RGB: 56,189,248</p>
+                        <p class="text-sm mt-3 text-gray-600">Secondary Accent. Mewakili fleksibilitas, keluasan ruang, dan akurasi posisi lokasi.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div class="h-32 bg-brand-gray border-b border-gray-100 w-full"></div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-brand-navy text-lg">Clean Gray</h4>
+                        <p class="text-xs text-gray-500 font-mono mt-1">HEX: #F8FAFC | RGB: 248,250,252</p>
+                        <p class="text-sm mt-3 text-gray-600">Background Light. Memberikan ruang baca yang bersih, modern, dan elegan pada desain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography" class="scroll-mt-24">
+            <div class="border-b border-gray-200 pb-4 mb-8">
+                <h3 class="text-2xl font-bold text-brand-navy">3. Typography Guidelines</h3>
+                <p class="text-gray-500 mt-2">Hierarki tipografi menggunakan font <span class="font-bold text-brand-navy">Plus Jakarta Sans</span>.</p>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
+                <div class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-baseline border-b border-gray-50 pb-6">
+                        <div class="text-sm text-gray-400 font-medium">Display (H1)</div>
+                        <div class="col-span-3 text-5xl md:text-6xl font-extrabold text-brand-navy tracking-tight">Investasi Cerdas.</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-baseline border-b border-gray-50 pb-6">
+                        <div class="text-sm text-gray-400 font-medium">Heading (H2)</div>
+                        <div class="col-span-3 text-3xl md:text-4xl font-bold text-brand-navy">Temukan Ruang Terbaik Anda</div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-baseline border-b border-gray-50 pb-6">
+                        <div class="text-sm text-gray-400 font-medium">Body Text (P)</div>
+                        <div class="col-span-3 text-base md:text-lg text-gray-600 leading-relaxed font-normal">
+                            Kami menghadirkan pilihan rumah, tanah, ruko, dan properti investasi yang dapat disesuaikan dengan kebutuhan hunian maupun rencana aset Anda di kawasan Bogor, Depok, Tangerang, Jakarta, Bandung, dan Cimahi.
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-baseline">
+                        <div class="text-sm text-gray-400 font-medium">Microcopy</div>
+                        <div class="col-span-3 text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wider">
+                            © 2026 Punya Ruang Realty. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tone" class="scroll-mt-24 pb-12">
+            <div class="border-b border-gray-200 pb-4 mb-8">
+                <h3 class="text-2xl font-bold text-brand-navy">4. Tone of Voice & Aturan Penggunaan</h3>
+                <p class="text-gray-500 mt-2">Bagaimana brand Punya Ruang Realty berkomunikasi dengan audiens.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-brand-navy text-white p-8 rounded-2xl shadow-sm md:col-span-1">
+                    <h4 class="text-xl font-bold text-brand-emerald mb-6">Karakter Komunikasi</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sky text-xl mt-0.5">▪</span>
+                            <div>
+                                <strong class="block">Informatif</strong>
+                                <span class="text-gray-300 text-sm">Jelas dalam menyampaikan data listing.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sky text-xl mt-0.5">▪</span>
+                            <div>
+                                <strong class="block">Transparan</strong>
+                                <span class="text-gray-300 text-sm">Objektif tentang fungsi, harga & potensi.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sky text-xl mt-0.5">▪</span>
+                            <div>
+                                <strong class="block">Solutif</strong>
+                                <span class="text-gray-300 text-sm">Fokus pada kebutuhan jangka panjang klien.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sky text-xl mt-0.5">▪</span>
+                            <div>
+                                <strong class="block">Edukatif</strong>
+                                <span class="text-gray-300 text-sm">Membantu pembeli paham nilai investasi.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-emerald-50 border border-emerald-100 p-6 rounded-2xl">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold">✓</div>
+                            <h4 class="text-lg font-bold text-brand-navy">Do's (Boleh)</h4>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>• Selalu berikan ruang kosong (clear space) yang cukup di sekitar logo.</li>
+                            <li>• Gunakan logo versi putih/terang jika diletakkan di atas background gelap.</li>
+                            <li>• Proporsikan logo secara seimbang (jangan distorsi/ditarik paksa).</li>
+                            <li>• Selalu gunakan font Plus Jakarta Sans untuk materi promosi.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-red-50 border border-red-100 p-6 rounded-2xl">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center font-bold">✕</div>
+                            <h4 class="text-lg font-bold text-brand-navy">Don'ts (Dilarang)</h4>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>• Mengganti komposisi warna asli logo selain dari palet yang ditetapkan.</li>
+                            <li>• Menambahkan efek drop shadow murahan yang mengganggu logo SVG.</li>
+                            <li>• Merubah font tipografi bawaan pada logo dengan font lain.</li>
+                            <li>• Menggunakan logo pada latar belakang yang ramai atau kontras buruk.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <h4 class="font-bold text-brand-navy text-xl">Punya Ruang Realty</h4>
+                <p class="text-sm text-gray-500 mt-1 italic">"Punya Ruang, Ruang Investasi."</p>
+                <p class="text-xs text-gray-400 mt-4">© 2026 Punya Ruang Realty. All Rights Reserved.</p>
+            </div>
+            <div class="text-right text-sm text-gray-600">
+                <p class="font-bold text-brand-navy mb-1">Kontak & Lokasi</p>
+                <p><strong>PIC:</strong> Aditya</p>
+                <p><strong>WhatsApp:</strong> 0812-2486-6614</p>
+                <p><strong>Email:</strong> punyaruang.realty@gmail.com</p>
+                <p><strong>Kantor:</strong> Komp. Nusa Hijau Cimahi</p>
+                <p class="mt-2 text-xs text-gray-500"><strong>Area:</strong> Bogor, Depok, Tangerang, Jakarta, Bandung, Cimahi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Untuk Download Logo (SVG & PNG) -->
+    <script>
+        function getSVGSource(svgElement) {
+            const serializer = new XMLSerializer();
+            let source = serializer.serializeToString(svgElement);
+            
+            // Validasi namespaces XML
+            if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
+                source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+            }
+            if(!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)){
+                source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
+            }
+            return '<?xml version="1.0" standalone="no"?>\r\n' + source;
+        }
+
+        // Fungsi Download Format SVG (Vector/HD)
+        function downloadSVG() {
+            const svgElement = document.getElementById('primary-logo-svg');
+            const source = getSVGSource(svgElement);
+            
+            const url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(source);
+            
+            const downloadLink = document.createElement("a");
+            downloadLink.href = url;
+            downloadLink.download = "Punya_Ruang_Realty_Logo.svg";
+            
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        }
+
+        // Fungsi Download Format PNG (Transparan)
+        function downloadPNG() {
+            const svgElement = document.getElementById('primary-logo-svg');
+            const source = getSVGSource(svgElement);
+            
+            const canvas = document.createElement('canvas');
+            // Setting resolusi tinggi untuk PNG (1200x1200px)
+            canvas.width = 1200;
+            canvas.height = 1200;
+            const ctx = canvas.getContext('2d');
+            
+            const img = new Image();
+            const blob = new Blob([source], {type: 'image/svg+xml;charset=utf-8'});
+            const url = URL.createObjectURL(blob);
+            
+            img.onload = function() {
+                // Gambar SVG ke Canvas HTML
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                URL.revokeObjectURL(url);
+                
+                // Konversi Canvas menjadi URL PNG
+                const pngUrl = canvas.toDataURL("image/png");
+                
+                const downloadLink = document.createElement("a");
+                downloadLink.href = pngUrl;
+                downloadLink.download = "Punya_Ruang_Realty_Logo.png";
+                
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+            };
+            
+            img.src = url;
+        }
+    </script>
+</body>
+</html>
