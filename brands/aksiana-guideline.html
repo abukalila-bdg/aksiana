@@ -46,11 +46,11 @@
         <!-- SECTION 1: THE LOGO -->
         <section id="logo" class="scroll-mt-24">
             <div class="mb-8">
-                <h2 class="text-2xl font-bold text-slate-900">1. Master Logo</h2>
+                <h2 class="text-2xl font-bold text-slate-900">1. Master Logo &amp; Favicon</h2>
                 <p class="text-slate-500 mt-2">Logo utama Aksiana berupa inisial "A" berbentuk pita lipat (folding ribbon) dengan palet warna Tech-Blue yang melambangkan pondasi kuat dan sinergi digital.</p>
             </div>
             
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm mb-12">
                 <!-- Preview Area -->
                 <div class="pattern-bg bg-slate-50 p-12 md:p-24 flex justify-center items-center border-b border-slate-200">
                     <div id="svg-final-logo" class="bg-white py-8 px-12 rounded-2xl shadow-xl border border-slate-100 transform scale-110">
@@ -93,6 +93,52 @@
                         <button onclick="downloadPNG('svg-final-logo', 'Aksiana_Master_Logo')" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-200 text-sm">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                             Download PNG
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAVICON SECTION -->
+            <div class="mb-4">
+                <h3 class="text-xl font-bold text-slate-900">Favicon / App Icon (Tanpa Teks)</h3>
+                <p class="text-slate-500 mt-2 text-sm">Versi minimalis berupa ikon inisial "A" berformat rasio 1:1 (kotak). Sangat ideal digunakan sebagai foto profil media sosial atau <code class="bg-slate-100 px-1 rounded">&lt;link rel="icon"&gt;</code> di tab browser.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                <!-- Preview Area Favicon -->
+                <div class="pattern-bg bg-slate-50 p-8 md:p-16 flex justify-center items-center border-b border-slate-200">
+                    <div id="svg-favicon-logo" class="bg-white p-6 rounded-3xl shadow-lg border border-slate-100 flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                        <!-- THE FAVICON SVG LOGO (Centered 100x100) -->
+                        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(-3.5, 10)">
+                                <!-- Left Leg (Dark Blue) -->
+                                <path d="M 45 0 L 5 80 L 30 80 L 58 24 Z" fill="#1D4ED8" />
+                                <!-- Right Leg (Light Blue) -->
+                                <path d="M 45 0 L 62 0 L 102 80 L 77 80 Z" fill="#60A5FA" opacity="0.95" />
+                                <!-- Crossbar Overlap (Vibrant Blue) -->
+                                <path d="M 18 53 L 88 53 L 75 80 L 5 80 Z" fill="#3B82F6" opacity="0.85" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Action Bar Favicon -->
+                <div class="p-6 bg-white flex flex-col lg:flex-row justify-between items-center gap-4">
+                    <div class="text-sm text-slate-500">
+                        Format: <strong class="text-slate-700">PNG, ICO, &amp; SVG</strong>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+                         <button onclick="downloadPNG('svg-favicon-logo', 'Aksiana_Favicon')" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-200 text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Download PNG
+                        </button>
+                        <button onclick="downloadICO('svg-favicon-logo', 'favicon')" class="w-full sm:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-purple-200 text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Download ICO
+                        </button>
+                        <button onclick="downloadSVG('svg-favicon-logo', 'Aksiana_Favicon')" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-emerald-100 text-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Download SVG
                         </button>
                     </div>
                 </div>
@@ -279,6 +325,56 @@
                 document.body.removeChild(a);
                 
                 showToast('Berhasil Di-download!', 'File PNG transparan telah tersimpan.');
+            };
+            img.src = imgSource;
+        }
+
+        function downloadICO(containerId, filename) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            const svgElement = container.querySelector('svg');
+            if (!svgElement) return;
+
+            // 1. Dapatkan string XML dari SVG
+            const svgData = new XMLSerializer().serializeToString(svgElement);
+            
+            // 2. Buat elemen Canvas (ICO butuh ukuran kotak kecil, idealnya 32x32 atau 64x64)
+            const canvas = document.createElement('canvas');
+            canvas.width = 64; 
+            canvas.height = 64;
+            
+            const ctx = canvas.getContext('2d');
+            
+            // 3. Konversi SVG ke Base64
+            const img = new Image();
+            const svgBase64 = btoa(unescape(encodeURIComponent(svgData)));
+            const imgSource = 'data:image/svg+xml;base64,' + svgBase64;
+
+            img.onload = function() {
+                // Scale SVG agar pas di kanvas 64x64
+                // (Lebar dan tinggi asli SVG kita adalah 100x100)
+                ctx.drawImage(img, 0, 0, 100, 100, 0, 0, 64, 64);
+                
+                // Ekstrak sebagai Image/X-Icon
+                // Note: toDataURL image/x-icon supportnya bervariasi tiap browser, 
+                // tapi output ini aman dibaca browser modern.
+                let icoData = canvas.toDataURL('image/x-icon');
+                
+                // Fallback jika browser tidak support image/x-icon natively via toDataURL
+                if (icoData.startsWith('data:image/png')) {
+                    icoData = icoData.replace('image/png', 'image/x-icon');
+                }
+                
+                // Buat link download
+                const a = document.createElement('a');
+                a.href = icoData;
+                a.download = filename + '.ico';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                showToast('Berhasil Di-download!', 'File ICO untuk tab browser telah tersimpan.');
             };
             img.src = imgSource;
         }
