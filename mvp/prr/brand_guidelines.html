@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Guidelines & Visual Identity - Punya Ruang Realty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['"Open Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',        // Signature Royal Gold Accent
+                            goldHover: '#B89428',   // Gold Hover
+                            charcoal: '#222222',    // Primary Dark Base
+                            slate: '#333333',       // Secondary Base Text
+                            lightGray: '#F4F4F4',   // Neutral Light Section
+                            border: '#E5E5E5'       // Neutral Border
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Open Sans', sans-serif; background-color: #FFFFFF; color: #222222; }
+        h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-brand-charcoal antialiased">
+
+<!-- Top Header Navigation -->
+<header class="sticky top-0 z-50 bg-brand-charcoal text-white border-b-4 border-brand-gold shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <!-- Header SVG Mini Logo -->
+            <div class="bg-brand-gold p-2 rounded-sm text-brand-charcoal">
+                <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 80V35L50 15L85 35V80H15Z" fill="#222222"/>
+                    <path d="M35 80V50H65V80" fill="#D4AF37"/>
+                    <circle cx="50" cy="35" r="7" fill="#D4AF37"/>
+                </svg>
+            </div>
+            <div>
+                <span class="text-xl font-extrabold uppercase tracking-wider text-white block leading-none font-heading">Punya Ruang</span>
+                <span class="text-xs text-brand-gold font-bold uppercase tracking-widest">Realty • Royal Gold Edition</span>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <button onclick="downloadSVG()" class="bg-brand-gold hover:bg-brand-goldHover text-brand-charcoal font-bold px-5 py-2.5 rounded-none text-xs md:text-sm uppercase tracking-wider transition duration-200 flex items-center gap-2 shadow-sm">
+                <i class="fa-solid fa-download"></i> Unduh Logo SVG
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Banner Section -->
+<section class="bg-brand-lightGray border-b border-brand-border py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+        <span class="inline-block bg-brand-gold text-brand-charcoal font-extrabold px-4 py-1 text-xs uppercase tracking-widest mb-4">Official Royal Gold Identity Guide</span>
+        <h1 class="text-4xl sm:text-5xl font-black text-brand-charcoal uppercase tracking-tight mb-4 font-heading">
+            Panduan Identitas Visual & Merek
+        </h1>
+        <p class="text-brand-slate text-base sm:text-lg max-w-3xl mx-auto font-normal leading-relaxed">
+            Standardisasi visual <span class="font-bold text-brand-charcoal">Punya Ruang Realty</span> yang mengusung karakter estetika real estate kelas atas: <span class="bg-brand-gold/30 px-1 font-semibold text-brand-charcoal">Mewah, Elegan, Berharga, Kontras Tinggi, dan Berorientasi pada Investasi</span>.
+        </p>
+    </div>
+</section>
+
+<!-- Main Content Container -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+
+    <!-- SECTION 1: MASTER LOGO & VECTOR ASSETS -->
+    <section id="logo-assets" class="bg-white border border-brand-border rounded-none p-6 sm:p-10 shadow-sm">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b-2 border-brand-charcoal pb-6 mb-8 gap-4">
+            <div>
+                <span class="text-xs font-bold text-brand-gold bg-brand-charcoal px-2.5 py-1 uppercase tracking-widest">Seksi 1</span>
+                <h2 class="text-2xl sm:text-3xl font-black uppercase text-brand-charcoal mt-2 font-heading">Master Logo & File Vektor</h2>
+                <p class="text-brand-slate text-sm">Gunakan logo vektor resmi untuk material cetak (spanduk, brosur) maupun kebutuhan digital.</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+                <button onclick="downloadSVG()" class="bg-brand-gold hover:bg-brand-goldHover text-brand-charcoal font-black px-6 py-3 text-xs uppercase tracking-widest transition flex items-center gap-2">
+                    <i class="fa-solid fa-file-code text-base"></i> Download Vector (.SVG)
+                </button>
+            </div>
+        </div>
+
+        <!-- Logo Variations Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Variant 1: Primary Vertical (Dark / Charcoal Card) -->
+            <div class="bg-brand-charcoal p-8 flex flex-col items-center justify-center relative min-h-[360px] border-t-8 border-brand-gold">
+                <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest uppercase bg-brand-gold text-brand-charcoal px-2 py-0.5">Primary Logo (Dark Background)</span>
+                
+                <div class="my-6">
+                    <!-- SVG MASTER ELEMENT -->
+                    <svg id="primary-logo-svg" width="300" height="220" viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Vector Icon -->
+                        <g transform="translate(100, 10)">
+                            <!-- House Frame Dark -->
+                            <path d="M10 80V35L50 10L90 35V80H10Z" fill="#222222" stroke="#D4AF37" stroke-width="6" stroke-linejoin="round"/>
+                            <!-- Investment Door Accent -->
+                            <path d="M35 80V48H65V80" fill="#D4AF37"/>
+                            <!-- Pin Location Circle -->
+                            <circle cx="50" cy="33" r="7" fill="#D4AF37"/>
+                        </g>
+                        <!-- Text Element -->
+                        <text x="150" y="135" text-anchor="middle" fill="#FFFFFF" font-family="'Montserrat', sans-serif" font-weight="900" font-size="24" letter-spacing="2">PUNYA RUANG</text>
+                        <text x="150" y="162" text-anchor="middle" fill="#D4AF37" font-family="'Montserrat', sans-serif" font-weight="800" font-size="15" letter-spacing="7">REALTY</text>
+                        <text x="150" y="190" text-anchor="middle" fill="#E5E5E5" font-family="'Open Sans', sans-serif" font-weight="600" font-size="10" letter-spacing="1">PUNYA RUANG, RUANG INVESTASI.</text>
+                    </svg>
+                </div>
+
+                <div class="mt-2 text-center">
+                    <button onclick="downloadSVG()" class="text-xs text-brand-gold hover:underline font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-download mr-1"></i> Unduh File SVG Ini
+                    </button>
+                </div>
+            </div>
+
+            <!-- Variant 2: Horizontal Secondary (Light Card) -->
+            <div class="bg-brand-lightGray p-8 flex flex-col items-center justify-center relative min-h-[360px] border-t-8 border-brand-charcoal border border-brand-border">
+                <span class="absolute top-4 left-4 text-[10px] font-bold tracking-widest uppercase bg-brand-charcoal text-white px-2 py-0.5">Horizontal Logo (Light Background)</span>
+                
+                <div class="my-6">
+                    <svg width="320" height="110" viewBox="0 0 340 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(15, 12)">
+                            <path d="M8 72V30L42 10L76 30V72H8Z" fill="#D4AF37" stroke="#222222" stroke-width="5" stroke-linejoin="round"/>
+                            <path d="M30 72V44H54V72" fill="#222222"/>
+                            <circle cx="42" cy="28" r="6" fill="#222222"/>
+                        </g>
+                        <text x="110" y="52" fill="#222222" font-family="'Montserrat', sans-serif" font-weight="900" font-size="24" letter-spacing="1">PUNYA RUANG</text>
+                        <text x="110" y="78" fill="#D4AF37" font-family="'Montserrat', sans-serif" font-weight="800" font-size="15" letter-spacing="6">REALTY</text>
+                        <text x="110" y="96" fill="#666666" font-family="'Open Sans', sans-serif" font-weight="600" font-size="9" letter-spacing="0.5">Punya Ruang, Ruang Investasi.</text>
+                    </svg>
+                </div>
+
+                <p class="text-xs text-brand-slate text-center font-semibold mt-2">
+                    Ideal untuk header situs web, nota, stempel digital, dan kartu nama.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: COLOR PALETTE -->
+    <section id="colors" class="bg-white border border-brand-border p-6 sm:p-10 shadow-sm">
+        <div class="border-b-2 border-brand-charcoal pb-4 mb-8">
+            <span class="text-xs font-bold text-brand-gold bg-brand-charcoal px-2.5 py-1 uppercase tracking-widest">Seksi 2</span>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase text-brand-charcoal mt-2 font-heading">Palet Warna Resmi (Royal Gold Scheme)</h2>
+            <p class="text-brand-slate text-sm">Skema warna eksklusif yang memancarkan stabilitas nilai aset, kemewahan, dan kepercayaan.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Color 1: Royal Gold -->
+            <div class="border border-brand-border overflow-hidden cursor-pointer group" onclick="copyColor('#D4AF37')">
+                <div class="h-32 bg-brand-gold p-4 flex items-end justify-between">
+                    <span class="bg-brand-charcoal text-brand-gold text-[10px] font-black uppercase px-2 py-0.5">Primary Accent</span>
+                    <span class="text-[10px] font-mono bg-white/80 text-black px-1.5 py-0.5 font-bold group-hover:scale-110 transition"><i class="fa-regular fa-copy"></i> Copy</span>
+                </div>
+                <div class="p-4 bg-white">
+                    <h3 class="font-bold text-brand-charcoal text-lg font-heading">Royal Gold</h3>
+                    <p class="text-xs text-brand-slate mb-3">Simbol kemewahan, pertumbuhan nilai aset, dan kualitas prima.</p>
+                    <div class="text-xs font-mono bg-brand-lightGray p-2.5 border border-brand-border space-y-1">
+                        <div><strong>HEX:</strong> #D4AF37</div>
+                        <div><strong>RGB:</strong> 212, 175, 55</div>
+                        <div><strong>CMYK:</strong> 0, 17, 74, 17</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color 2: Charcoal Dark -->
+            <div class="border border-brand-border overflow-hidden cursor-pointer group" onclick="copyColor('#222222')">
+                <div class="h-32 bg-brand-charcoal p-4 flex items-end justify-between">
+                    <span class="bg-brand-gold text-brand-charcoal text-[10px] font-black uppercase px-2 py-0.5">Primary Dark</span>
+                    <span class="text-[10px] font-mono bg-white/80 text-black px-1.5 py-0.5 font-bold group-hover:scale-110 transition"><i class="fa-regular fa-copy"></i> Copy</span>
+                </div>
+                <div class="p-4 bg-white">
+                    <h3 class="font-bold text-brand-charcoal text-lg font-heading">Charcoal Black</h3>
+                    <p class="text-xs text-brand-slate mb-3">Simbol kekuatan, kepastian hukum, dan profesionalisme.</p>
+                    <div class="text-xs font-mono bg-brand-lightGray p-2.5 border border-brand-border space-y-1">
+                        <div><strong>HEX:</strong> #222222</div>
+                        <div><strong>RGB:</strong> 34, 34, 34</div>
+                        <div><strong>CMYK:</strong> 0, 0, 0, 87</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color 3: Slate Gray -->
+            <div class="border border-brand-border overflow-hidden cursor-pointer group" onclick="copyColor('#333333')">
+                <div class="h-32 bg-brand-slate p-4 flex items-end justify-between">
+                    <span class="bg-white text-brand-charcoal text-[10px] font-black uppercase px-2 py-0.5">Secondary Base</span>
+                    <span class="text-[10px] font-mono bg-white/80 text-black px-1.5 py-0.5 font-bold group-hover:scale-110 transition"><i class="fa-regular fa-copy"></i> Copy</span>
+                </div>
+                <div class="p-4 bg-white">
+                    <h3 class="font-bold text-brand-charcoal text-lg font-heading">Slate Gray</h3>
+                    <p class="text-xs text-brand-slate mb-3">Digunakan untuk teks deskriptif, sub-heading, & border.</p>
+                    <div class="text-xs font-mono bg-brand-lightGray p-2.5 border border-brand-border space-y-1">
+                        <div><strong>HEX:</strong> #333333</div>
+                        <div><strong>RGB:</strong> 51, 51, 51</div>
+                        <div><strong>CMYK:</strong> 0, 0, 0, 80</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color 4: Light Gray Background -->
+            <div class="border border-brand-border overflow-hidden cursor-pointer group" onclick="copyColor('#F4F4F4')">
+                <div class="h-32 bg-brand-lightGray p-4 flex items-end justify-between border-b border-brand-border">
+                    <span class="bg-brand-charcoal text-white text-[10px] font-black uppercase px-2 py-0.5">Neutral Light</span>
+                    <span class="text-[10px] font-mono bg-white/80 text-black px-1.5 py-0.5 font-bold group-hover:scale-110 transition"><i class="fa-regular fa-copy"></i> Copy</span>
+                </div>
+                <div class="p-4 bg-white">
+                    <h3 class="font-bold text-brand-charcoal text-lg font-heading">Clean Light Gray</h3>
+                    <p class="text-xs text-brand-slate mb-3">Latar belakang bersih untuk seksi konten dan banner.</p>
+                    <div class="text-xs font-mono bg-brand-lightGray p-2.5 border border-brand-border space-y-1">
+                        <div><strong>HEX:</strong> #F4F4F4</div>
+                        <div><strong>RGB:</strong> 244, 244, 244</div>
+                        <div><strong>CMYK:</strong> 0, 0, 0, 4</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: TYPOGRAPHY GUIDELINES -->
+    <section id="typography" class="bg-white border border-brand-border p-6 sm:p-10 shadow-sm">
+        <div class="border-b-2 border-brand-charcoal pb-4 mb-8">
+            <span class="text-xs font-bold text-brand-gold bg-brand-charcoal px-2.5 py-1 uppercase tracking-widest">Seksi 3</span>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase text-brand-charcoal mt-2 font-heading">Panduan Tipografi</h2>
+            <p class="text-brand-slate text-sm">Kombinasi Montserrat (Heading Bold) & Open Sans (Body) memberikan visibilitas dan kontras tinggi.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+                <span class="text-xs font-extrabold text-brand-gold bg-brand-charcoal px-2 py-0.5 uppercase tracking-wider">Primary Font Family</span>
+                <h3 class="text-3xl font-black text-brand-charcoal uppercase mt-2 mb-3 font-heading">Montserrat</h3>
+                <p class="text-brand-slate text-sm leading-relaxed mb-6">
+                    Gunakan font Montserrat dengan ketebalan <strong>Bold (700)</strong> atau <strong>Black (900)</strong> serta huruf kapital (UPPERCASE) untuk seluruh Judul Utama, Headline Spanduk, dan Call-to-Action.
+                </p>
+                <div class="space-y-3 bg-brand-lightGray p-4 border border-brand-border">
+                    <div class="text-2xl font-black text-brand-charcoal uppercase font-heading">Montserrat Black 900</div>
+                    <div class="text-xl font-bold text-brand-charcoal uppercase font-heading">Montserrat Bold 700</div>
+                    <div class="text-base font-semibold text-brand-slate uppercase font-heading">Montserrat SemiBold 600</div>
+                </div>
+            </div>
+
+            <div>
+                <span class="text-xs font-extrabold bg-brand-gold text-brand-charcoal px-2 py-0.5 uppercase tracking-wider">Body Text Font Family</span>
+                <h3 class="text-3xl font-bold text-brand-charcoal mt-2 mb-3">Open Sans</h3>
+                <p class="text-brand-slate text-sm leading-relaxed mb-6">
+                    Gunakan font Open Sans untuk deskripsi listing, paragraf artikel, surat perjanjian, dan dokumen resmi agar nyaman dibaca dalam durasi lama.
+                </p>
+                <div class="bg-brand-lightGray p-4 border border-brand-border space-y-2">
+                    <p class="text-base font-semibold text-brand-charcoal">Open Sans Bold 700 - Subtitle & Point Penting</p>
+                    <p class="text-sm font-normal text-brand-slate">Open Sans Regular 400 - "Punya Ruang Realty membantu Anda menemukan properti terbaik di kawasan strategis Jabodetabek dan Bandung Raya."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: BRAND VOICE & RULES -->
+    <section id="rules" class="bg-white border border-brand-border p-6 sm:p-10 shadow-sm">
+        <div class="border-b-2 border-brand-charcoal pb-4 mb-8">
+            <span class="text-xs font-bold text-brand-gold bg-brand-charcoal px-2.5 py-1 uppercase tracking-widest">Seksi 4</span>
+            <h2 class="text-2xl sm:text-3xl font-black uppercase text-brand-charcoal mt-2 font-heading">Aturan Penggunaan & Tone of Voice</h2>
+            <p class="text-brand-slate text-sm">Etika komunikasi visual merek Punya Ruang Realty di lapangan.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Do's & Don'ts -->
+            <div class="bg-brand-lightGray p-6 border border-brand-border">
+                <h3 class="text-lg font-black uppercase text-brand-charcoal mb-4 flex items-center gap-2 font-heading">
+                    <i class="fa-solid fa-square-check text-brand-gold text-xl"></i> Aturan Penggunaan Logo (Do's)
+                </h3>
+                <ul class="space-y-3 text-sm text-brand-slate">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                        <span>Gunakan latar belakang <strong>Charcoal Black</strong> atau <strong>Putih Clear</strong> untuk kontras maksimal.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                        <span>Pastikan teks slogan <em>"Punya Ruang, Ruang Investasi"</em> tertera pada spanduk utama.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-check text-emerald-600 mt-1"></i>
+                        <span>Sediakan ruang kosong minimum sebesar 20px di sekeliling logo.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-brand-lightGray p-6 border border-brand-border">
+                <h3 class="text-lg font-black uppercase text-brand-charcoal mb-4 flex items-center gap-2 font-heading">
+                    <i class="fa-solid fa-rectangle-xmark text-red-600 text-xl"></i> Pantangan (Don'ts)
+                </h3>
+                <ul class="space-y-3 text-sm text-brand-slate">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-xmark text-red-600 mt-1"></i>
+                        <span>Dilarang mengubah warna Royal Gold (#D4AF37) dengan warna kuning neon mentah.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-xmark text-red-600 mt-1"></i>
+                        <span>Dilarang menarik atau merubah proporsi aspek rasio logo (distorsi/gepeng).</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-xmark text-red-600 mt-1"></i>
+                        <span>Dilarang meletakkan logo di atas foto latar belakang yang terlalu ramai tanpa overlay.</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- Toast Notification -->
+<div id="toast" class="fixed bottom-6 right-6 bg-brand-charcoal text-brand-gold border border-brand-gold px-6 py-3 font-bold text-xs uppercase tracking-widest hidden shadow-2xl transition duration-300">
+    <i class="fa-solid fa-check-circle text-sm mr-2"></i> Kode Warna Disalin ke Clipboard!
+</div>
+
+<!-- Footer -->
+<footer class="bg-brand-charcoal text-white border-t-4 border-brand-gold py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <div class="flex items-center justify-center gap-2">
+            <span class="bg-brand-gold text-brand-charcoal px-2 py-0.5 text-xs font-black uppercase font-heading">Punya Ruang Realty</span>
+            <span class="text-xs text-gray-400">| Royal Gold Brand Standard</span>
+        </div>
+        <p class="text-xs text-gray-400">
+            Kontak PIC: <strong>Aditya</strong> (081224866614) • Email: punyaruang.realty@gmail.com <br>
+            Lokasi: Komp. Nusa Hijau Cimahi • Area Layanan: Jabodetabek & Bandung Raya
+        </p>
+        <p class="text-[10px] text-gray-500 uppercase tracking-widest pt-4 border-t border-gray-800">
+            © 2026 Punya Ruang Realty. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<!-- JavaScript Engine -->
+<script>
+    function downloadSVG() {
+        const svgElement = document.getElementById('primary-logo-svg');
+        const serializer = new XMLSerializer();
+        let source = serializer.serializeToString(svgElement);
+
+        if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
+            source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+        }
+        if(!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)){
+            source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
+        }
+
+        source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
+        const url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(source);
+
+        const downloadLink = document.createElement("a");
+        downloadLink.href = url;
+        downloadLink.download = "Punya_Ruang_Realty_Logo_RoyalGold.svg";
+
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    }
+
+    function copyColor(hex) {
+        navigator.clipboard.writeText(hex);
+        const toast = document.getElementById('toast');
+        toast.classList.remove('hidden');
+        setTimeout(() => {
+            toast.classList.add('hidden');
+        }, 2000);
+    }
+</script>
+
+</body>
+</html>
